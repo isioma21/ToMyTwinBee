@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url('./Valentine.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .note {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            max-width: 90vw;
+            width: 100%;
+            max-width: 500px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        h1 {
+            color: #d6336c;
+            font-size: clamp(1.2rem, 2.5vw, 1.5rem); /* Smaller, but still eye-catching */
+            font-weight: 600;
+            margin-bottom: 15px;
+            opacity: 0;
+            animation: slideIn 1s ease-out forwards 1s;
+        }
+
+        p {
+            font-size: clamp(1rem, 2vw, 1.125rem);
+            color: #444;
+            font-weight: 300;
+            line-height: 1.6;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        .heart {
+            font-size: clamp(1.2rem, 2.5vw, 1.5rem); /* Same size as h1 for balance */
+            color: #d6336c;
+            opacity: 0;
+            animation: slideIn 1s ease-out forwards 3s;
+        }
+
+        .music-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            font-weight: 600;
+            color: #fff;
+            background-color: #d6336c;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards 3.5s;
+        }
+
+        .music-button:hover {
+            background-color: #b22250;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        p:nth-of-type(1) { animation: fadeIn 1s ease-out forwards 1.5s; }
+        p:nth-of-type(2) { animation: fadeIn 1s ease-out forwards 2s; }
+        p:nth-of-type(3) { animation: fadeIn 1s ease-out forwards 2.5s; }
+        p:nth-of-type(4) { animation: fadeIn 1s ease-out forwards 3s; }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .note {
+                padding: 1.5rem;
+            }
+
+            h1, .heart {
+                font-size: 1.3rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .music-button {
+                font-size: 0.875rem;
+                padding: 10px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="note">
+        <h1>To My Twin 🐝(Bee),</h1>
+        <p>
+            You are one of the kindest, most loving souls I’ve ever known. Your selflessness shines in everything you do, 
+            and the way you care for those around you is something I admire more than words can express. 
+            You have a heart full of strength, and I learn from you every day. 
+            Your willpower, intelligence, and grace leave me in awe. 
+            You’ve shown me what it means to be strong, to stand tall even when life is tough, and to love without limits.
+        </p>
+        <p>
+            Like a rose growing in the most unlikely place, you have bloomed in my heart, defying the odds. 
+            Your presence fills the emptiness within me like the very air I breathe, 
+            keeping me alive, just as oxygen sustains life in the vastness of space.
+        </p>
+        <p>
+            Before you, my heart was cold, lost in a world that didn’t know warmth. 
+            But with your love, you’ve melted the ice, turning the fragments of my soul into something whole again. 
+            You saved me, and every day with you, I feel the strength of your love bring me back to life.
+        </p>
+        <p>
+            I yearn for you in ways words can barely capture, and I would give anything to protect you, 
+            to be your safe place, as you have been mine. 
+            You light up my world in ways I never thought possible, and for that, I am endlessly grateful.
+        </p>
+        <p>
+            May God bless and protect you & I love you so much❤️
+        </p>
+
+        <h1 class="heart">To My Everyday Valentine ❤️</h1>
+
+        <a href="https://open.spotify.com/track/5XeFesFbtLpXzIVDNQP22n?si=321kCPp5SPK-1fJWitEuug" target="_blank" class="music-button">
+            I hope this song makes you smile 🎶
+        </a>
+    </div>
+</body>
+</html>
